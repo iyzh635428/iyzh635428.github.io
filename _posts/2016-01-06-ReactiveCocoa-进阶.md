@@ -57,7 +57,6 @@ Hook原理：在每次调用一个API返回结果之前，先执行你自己的�
 	**RACStreamBindBlock**:
 `typedef RACStream * (^RACStreamBindBlock)(id value, BOOL *stop);`
 
-     `参数一(value)`:表示接收到信号的原始值，还没做处理
      
      `参数二(*stop)`:用来控制绑定Block，如果*stop = yes,那么就会结束绑定。
      
